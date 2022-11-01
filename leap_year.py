@@ -26,10 +26,12 @@ def main():
                     print("The year {0} is a leap year.".format(year_as_number))
             else:
                 print("The year {0} is a common year.".format(year_as_number))
-        except ValueError:
-            print("{0} is not a valid input".format(year_as_string))
-        finally:
-            print("Done.")
+        else:
+            print("\n{} is not in the common era.".format(year_as_number))
+    except ValueError:
+        print("{0} is not a valid input".format(year_as_string))
+    finally:
+        print("Done.")
 
 
 if __name__ == "__main__":
